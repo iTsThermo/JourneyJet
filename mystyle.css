@@ -4,8 +4,7 @@
 
 .section1, .section2, .section3, .section4 {
     flex: 1 1 auto;        
-    height: 500px;
-    border: 1px solid red;
+    height: 450px;
 }
 
 .pageContainer {
@@ -20,36 +19,66 @@
 }
 
 .section1 .top {
-    height: 100px;
-    border: 5px solid red;
+    height: 50px;
     flex: 1 1 auto;
     display: inline-flex;
+    display: flex;
+    border: 5px solid red;
 }
 
 .section1 .top p {
     font-weight: bolder;
     color: #f9faf8;
     font-size: 24px;
-    border: 5px solid red;
     margin: 0px;
     align-self: center;
+    flex: 6;
     position: relative;
     left: 10%;
 }
 
-.section1 .top a {
+.section1 .top .LM, .section1 .top .CA, .section1 .top .SI {
     color: #f9faf8;
-    border: 5px solid red;
     align-self: center;
+    display: 1;
     position: relative;
-    left: 70%;
-    padding: 10px;
+    right: 10%;
+    padding: 5px;
+}
+
+.section1 .top .SI {
+    padding-right: 0px;
 }
 
 .section1 .content {
     height: 400px;
-    border: 5px solid red;
     flex: 1 1 auto;
+    display: flex;
+    flex-shrink: 1;
+}
+
+.section1 .content .left {
+    flex: 1;
+    border: 5px solid red;
+    position: relative;
+    left: 10%;
+    top: 10%;
+}
+
+.section1 .content .left button {
+    background-color: #3882f6;
+    color: white;
+    border-radius: 15px;
+}
+
+.section1 .content img {
+    flex: 0 0 auto;
+    height: 300px;
+    border: 5px solid red;
+    position: relative;
+    right: 10%;
+    flex: 1;
+    top: 10%;
 }
 
 .section2 {
