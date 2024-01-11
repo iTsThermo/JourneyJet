@@ -1,1 +1,1 @@
-Landing Page taylored toward a airlines
+Landing Page taylored for airlines.
